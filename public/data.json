@@ -1,0 +1,44 @@
+[
+    {
+        "service_id": "01",
+        "title": "4 WEEK WORKOUT OR DIET PLAN",
+        "img": "https://images.unsplash.com/photo-1466637574441-749b8f19452f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Zml0bmVzc3xlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60",
+        "price": "30",
+        "description": "A professional workout or diet plan tailored for you + Consultation according to your goals"
+    },
+    {
+        "service_id": "02",
+        "title": "6 WEEK WORKOUT & DIET PLAN",
+        "img": "https://images.unsplash.com/photo-1532054241088-402b4150db33?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGlldHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60",
+        "price": "45",
+        "description": "Perfectly tailored workout and diet plan to reach any goal + Consultation and Tips"
+    },
+    {
+        "service_id": "03",
+        "title": "8 WEEK RESULT GUARANTEED PLAN",
+        "img": "https://images.unsplash.com/photo-1661678730712-13b11a07ec5a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHdlaWdodCUyMGxvc3N8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "price": "65",
+        "description": "8 Week diet and workout plan to reach any goal and transform yourself + Supplement guide"
+    },
+    {
+        "service_id": "04",
+        "title": "10 X 30SEC WORKOUT EXERCISE VIDEOS",
+        "img": "https://images.unsplash.com/photo-1656565565158-b4e1ed1f9135?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDZ8fGd5bXxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60",
+        "price": "30",
+        "description": "Ten 30-seconds clips of a popular fitness exercise. All of the exercises included in the Basic Plan plus the following: Burpees, Mountain Climbers, Russian Twists, Sit Ups, Tricep Dips,  Push Ups, Glute Bridge, Reverse Lunges, Reverse Lunges, Bodyweight Squats."
+    },
+    {
+        "service_id": "05",
+        "title": "20 X 30SEC WORKOUT EXERCISE VIDEOS",
+        "img": "https://images.unsplash.com/photo-1661678730729-55e2856a8e76?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGZpdG5lc3MlMjBlcXVpcG1lbnR8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "price": "60",
+        "description": "Twenty 30-seconds clips of a popular fitness exercise. All of the exercises included in the Basic Plan plus the following:  Froggers, Heal Touches, Scissor Kicks, Side Planks,  Commando Planks, Donkey Kicks, Curtsy Lunges, Side lunges, Sumo Squats."
+    },
+    {
+        "service_id": "06",
+        "title": "30 X 30SEC WORKOUT EXERCISE VIDEOS",
+        "img": "https://images.unsplash.com/photo-1652364690376-db27a1965bc0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fGZpdG5lc3N8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "price": "75",
+        "description": "Thirty 30-seconds clips of a popular fitness exercise. All of the exercises included in the Basic Plan plus the following: Dead Bugs, Bicycles, Toe Touch Crunches, Cross Body Tabletops, Cross Body Tabletops, V Ups,  Kick Throughs, Glute Kickbacks, Jump Lunges,  Sumo Squat Pulses, Jump Squats."
+    }
+]
