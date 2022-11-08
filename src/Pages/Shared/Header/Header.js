@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom'
 import { FaCheckDouble } from "react-icons/fa";
+import { AuthContext } from '../../../Contexts/AuthProvider';
 
 const Header = () => {
+    const { logout, user } = useContext(AuthContext)
+
+    const handleLogout = () => {
+        logout()
+            .then(() => { })
+            .catch(err => console.error(err))
+    }
     return (
         <div className="navbar bg-slate-300 p-3 mb-14">
             <div className="navbar-start">
@@ -12,16 +20,33 @@ const Header = () => {
                     </label>
                     <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                         <li><Link to='/home'>Home</Link></li>
-                        <li><Link>Blog</Link></li>
+                        <li><Link className='ml-5'>Blog</Link></li>
+                        <li><Link to='/login' className='ml-5 btn btn-active btn-accent text-white'>Login</Link></li>
                     </ul>
                 </div>
-                <FaCheckDouble className='text-xl mr-2'></FaCheckDouble> <Link className="text-xl font-bold">The Fitness Folk</Link>
+                <FaCheckDouble className='text-xl mr-2'></FaCheckDouble> <Link to='/' className="text-xl font-bold">The Fitness Folk</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0 font-semibold">
                     <li><Link to='/home'>Home</Link></li>
                     <li><Link className='ml-5'>Blog</Link></li>
-                    <li><Link className="btn btn-active btn-accent text-white ml-5">Login</Link></li>
+                    {user?.photoURL ?
+                        <>
+                            <Link onClick={handleLogout} className='btn btn-active btn-accent text-white ml-5'>
+                                Log Out
+                            </Link>
+                            <div className="avatar">
+                                <div className="mask mask-squircle h-9 mt-1 ml-5">
+                                    <img className='' src={user?.photoURL} alt="" />
+                                </div>
+                            </div>
+                        </>
+                        :
+                        <>
+                            <Link to='/login' className="btn btn-active btn-accent text-white ml-5">
+                                Login
+                            </Link>
+                        </>}
                 </ul>
             </div>
             <div className="navbar-end">

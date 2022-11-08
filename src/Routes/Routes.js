@@ -3,6 +3,8 @@ import Main from "../Layout/Main";
 import Home from "../Pages/Home/Home/Home";
 import AllServices from "../Pages/Home/Services/AllServices";
 import ServiceDetails from "../Pages/Home/Services/ServiceDetails";
+import Login from "../Pages/Login/Login";
+import Register from "../Pages/Register/Register";
 import CustomerReview from "../Pages/Reviews/CustomerReview";
 
 export const router = createBrowserRouter([
@@ -32,6 +34,14 @@ export const router = createBrowserRouter([
                 element: <CustomerReview></CustomerReview>,
                 loader: ({ params }) => fetch(`http://localhost:5000/customerreview/${params.id}`)
             },
+            {
+                path: '/login',
+                element: <Login></Login>
+            },
+            {
+                path: '/register',
+                element: <Register></Register>
+            }
         ]
     },
 ]);
