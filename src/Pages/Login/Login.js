@@ -1,10 +1,16 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Contexts/AuthProvider';
 
 const Login = () => {
 
     const { login } = useContext(AuthContext)
+
+    const navigate = useNavigate()
+
+    const location = useLocation()
+
+    const from = location.state?.from?.pathname || "/";
 
     const handleLogin = (event) => {
         event.preventDefault()
@@ -17,6 +23,7 @@ const Login = () => {
                 const user = result.user
                 console.log(user)
                 form.reset()
+                navigate(from, { replace: true })
             })
             .catch(err => console.error(err))
     }
@@ -24,7 +31,7 @@ const Login = () => {
     return (
         <div className='flex justify-center my-20'>
             <div className="p-4 w-full max-w-sm  rounded-lg border shadow-md sm:p-6 md:p-8 bg-gray-800 border-gray-700">
-                <form onSuspend={handleLogin} className="space-y-6">
+                <form onSubmit={handleLogin} className="space-y-6">
                     <h5 className="text-xl font-medium text-white">LOG IN</h5>
                     <div>
                         <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-300">Your email</label>

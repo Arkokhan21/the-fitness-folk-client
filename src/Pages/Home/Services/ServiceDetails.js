@@ -1,11 +1,24 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Reviews from '../../Reviews/Reviews';
 import { Link } from 'react-router-dom'
+import { AuthContext } from '../../../Contexts/AuthProvider';
 
 const ServiceDetails = () => {
 
+    const { user } = useLoaderData(AuthContext)
+
     const { title, img, price, description, review, _id } = useLoaderData()
+
+    const [reviews, setReviews] = useState([])
+
+    useEffect(() => {
+        fetch(`http://localhost:5000/reviews?email=${user?.email}`)
+            .then(res => res.json())
+            .then(data => setReviews(data))
+            .catch(err => console.error(err))
+    }, [user?.email])
+
 
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 mb-20'>
