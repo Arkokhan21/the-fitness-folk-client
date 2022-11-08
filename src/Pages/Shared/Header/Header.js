@@ -13,7 +13,6 @@ const Header = () => {
                     <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                         <li><Link to='/home'>Home</Link></li>
                         <li><Link>Blog</Link></li>
-                        <li> <Link className="btn btn-active btn-accent text-white">Login</Link></li>
                     </ul>
                 </div>
                 <FaCheckDouble className='text-xl mr-2'></FaCheckDouble> <Link className="text-xl font-bold">The Fitness Folk</Link>

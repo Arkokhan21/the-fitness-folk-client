@@ -1,9 +1,9 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+// import { useLoaderData } from 'react-router-dom';
 
 const CustomerReview = () => {
 
-    const { title, img, price, description, review, _id } = useLoaderData()
+    // const { title, img, price, description, review, _id } = useLoaderData()
 
     return (
         <div>
