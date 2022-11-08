@@ -1,19 +1,25 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 const ServiceItem = ({ service }) => {
 
-    const { title, img, price, description } = service
+    const { title, img, price, description, _id } = service
 
     return (
-        <div className="max-w-xs rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100">
-            <img src={img} alt="" className="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500" />
-            <div className="flex flex-col justify-between p-6 space-y-8">
-                <div className="space-y-2">
-                    <h2 className="text-3xl font-semibold tracking-wide">{title}</h2>
-                    <h2 className="text-xl font-semibold tracking-wide">${price}</h2>
-                    <p className="dark:text-gray-100">{description}</p>
+        <div>
+            <div className="card w-96 shadow-xl bg-slate-300">
+                <div className="card-body">
+                    <h2 className="card-title">{title}</h2>
+                    <h2 className="text-xl font-bold">${price}</h2>
+                    <p>
+                        {
+                            description.length > 50 &&
+                            description.slice(0, 50) + '...'
+                        }
+                    </p>
+                    <Link to={`/services/${_id}`}><button className="btn btn-active btn-accent text-white">View Details</button></Link>
                 </div>
-                <button type="button" className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md dark:bg-violet-400 dark:text-gray-900">Read more</button>
+                <figure><img src={img} alt="Shoes" /></figure>
             </div>
         </div>
     );

@@ -4,41 +4,113 @@
         "title": "4 WEEK WORKOUT OR DIET PLAN",
         "img": "https://images.unsplash.com/photo-1466637574441-749b8f19452f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Zml0bmVzc3xlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60",
         "price": "30",
-        "description": "A professional workout or diet plan tailored for you + Consultation according to your goals"
+        "description": "A professional workout or diet plan tailored for you + Consultation according to your goals",
+        "review": [
+            {
+                "name": "Bruce Banner",
+                "img": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+                "details": "Fantastic detailed plan. Great job!"
+            },
+            {
+                "name": "Tony Stark",
+                "img": "https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+                "details": "He understood my needs and came up with a plan for it. I am really satisfied and will probably return to him in the future!"
+            }
+        ]
     },
     {
         "service_id": "02",
         "title": "6 WEEK WORKOUT & DIET PLAN",
         "img": "https://images.unsplash.com/photo-1532054241088-402b4150db33?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGlldHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60",
         "price": "45",
-        "description": "Perfectly tailored workout and diet plan to reach any goal + Consultation and Tips"
+        "description": "Perfectly tailored workout and diet plan to reach any goal + Consultation and Tips",
+        "review": [
+            {
+                "name": "Peter Parker",
+                "img": "https://plus.unsplash.com/premium_photo-1665461700564-78476e329876?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+                "details": "He is a quick and responsive seller! He created a meal plan that is perfect for my lifestyle as a student."
+            },
+            {
+                "name": "Salman Khan",
+                "img": "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+                "details": "I would definitely recommend him to anyone who is looking for some nutritional & diet plan ideas."
+            }
+        ]
     },
     {
         "service_id": "03",
-        "title": "8 WEEK RESULT GUARANTEED PLAN",
+        "title": "8 WEEK WORKOUT & DIET PLAN",
         "img": "https://images.unsplash.com/photo-1661678730712-13b11a07ec5a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHdlaWdodCUyMGxvc3N8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
         "price": "65",
-        "description": "8 Week diet and workout plan to reach any goal and transform yourself + Supplement guide"
+        "description": "8 Week diet and workout plan to reach any goal and transform yourself + Supplement guide",
+        "review": [
+            {
+                "name": "Alex Aiden",
+                "img": "https://plus.unsplash.com/premium_photo-1665461700741-eeda3c20f8ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fG1hbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+                "details": "Fantastic detailed plan. Great job!"
+            },
+            {
+                "name": "Evan Enzo",
+                "img": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG1hbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+                "details": "Great work for the price in an easy to use format with all the information you could need."
+            }
+        ]
     },
     {
         "service_id": "04",
         "title": "10 X 30SEC WORKOUT EXERCISE VIDEOS",
         "img": "https://images.unsplash.com/photo-1656565565158-b4e1ed1f9135?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDZ8fGd5bXxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60",
         "price": "30",
-        "description": "Ten 30-seconds clips of a popular fitness exercise. All of the exercises included in the Basic Plan plus the following: Burpees, Mountain Climbers, Russian Twists, Sit Ups, Tricep Dips,  Push Ups, Glute Bridge, Reverse Lunges, Reverse Lunges, Bodyweight Squats."
+        "description": "Ten 30-seconds clips of a popular fitness exercise. All of the exercises included in the Basic Plan plus the following: Burpees, Mountain Climbers, Russian Twists, Sit Ups, Tricep Dips,  Push Ups, Glute Bridge, Reverse Lunges, Reverse Lunges, Bodyweight Squats.",
+        "review": [
+            {
+                "name": "Gavin Grayson",
+                "img": "https://images.unsplash.com/photo-1615109398623-88346a601842?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fG1hbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+                "details": "Really great, broke everything down well. Thank you, fantastic value."
+            },
+            {
+                "name": "Harry Hunter",
+                "img": "https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fG1hbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+                "details": "Awesome! Very professional and detailed"
+            }
+        ]
     },
     {
         "service_id": "05",
         "title": "20 X 30SEC WORKOUT EXERCISE VIDEOS",
         "img": "https://images.unsplash.com/photo-1661678730729-55e2856a8e76?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGZpdG5lc3MlMjBlcXVpcG1lbnR8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
         "price": "60",
-        "description": "Twenty 30-seconds clips of a popular fitness exercise. All of the exercises included in the Basic Plan plus the following:  Froggers, Heal Touches, Scissor Kicks, Side Planks,  Commando Planks, Donkey Kicks, Curtsy Lunges, Side lunges, Sumo Squats."
+        "description": "Twenty 30-seconds clips of a popular fitness exercise. All of the exercises included in the Basic Plan plus the following:  Froggers, Heal Touches, Scissor Kicks, Side Planks,  Commando Planks, Donkey Kicks, Curtsy Lunges, Side lunges, Sumo Squats.",
+        "review": [
+            {
+                "name": "Jaxon Jordan",
+                "img": "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fG1hbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+                "details": "Very professional, great communication, super recommended!"
+            },
+            {
+                "name": "Rocky Handsome",
+                "img": "https://images.unsplash.com/photo-1577880216142-8549e9488dad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDB8fG1hbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+                "details": "Really nice seller and highly knowledgeable! "
+            }
+        ]
     },
     {
         "service_id": "06",
         "title": "30 X 30SEC WORKOUT EXERCISE VIDEOS",
         "img": "https://images.unsplash.com/photo-1652364690376-db27a1965bc0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fGZpdG5lc3N8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
         "price": "75",
-        "description": "Thirty 30-seconds clips of a popular fitness exercise. All of the exercises included in the Basic Plan plus the following: Dead Bugs, Bicycles, Toe Touch Crunches, Cross Body Tabletops, Cross Body Tabletops, V Ups,  Kick Throughs, Glute Kickbacks, Jump Lunges,  Sumo Squat Pulses, Jump Squats."
+        "description": "Thirty 30-seconds clips of a popular fitness exercise. All of the exercises included in the Basic Plan plus the following: Dead Bugs, Bicycles, Toe Touch Crunches, Cross Body Tabletops, Cross Body Tabletops, V Ups,  Kick Throughs, Glute Kickbacks, Jump Lunges,  Sumo Squat Pulses, Jump Squats.",
+        "review": [
+            {
+                "name": "Dustin Wood",
+                "img": "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fG1hbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+                "details": "Excellent workout. Looking forward to be making some progress with my current weight."
+            },
+            {
+                "name": "Albert Alan",
+                "img": "https://images.unsplash.com/photo-1600603405959-6d623e92445c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDZ8fG1hbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+                "details": "Great work for the price in an easy to use format with all the information you could need."
+            }
+        ]
     }
 ]
