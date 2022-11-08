@@ -1,10 +1,11 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Reviews from '../../Reviews/Reviews';
+import { Link } from 'react-router-dom'
 
 const ServiceDetails = () => {
 
-    const { title, img, price, description, review } = useLoaderData()
+    const { title, img, price, description, review, _id } = useLoaderData()
 
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 mb-20'>
@@ -21,6 +22,7 @@ const ServiceDetails = () => {
                 {
                     review.map(rvw => <Reviews key={rvw.name} rvw={rvw}></Reviews>)
                 }
+                <Link to={`/customerreview/${_id}`} className="btn btn-active btn-accent text-white">Add A Review</Link>
             </div>
         </div>
     );
