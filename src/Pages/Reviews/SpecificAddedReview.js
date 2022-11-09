@@ -2,7 +2,7 @@ import React from 'react';
 
 const SpecificAddedReview = ({ addedrvw }) => {
 
-    const { photoURL, review, reviewer, packageName } = addedrvw
+    const { photoURL, review, reviewer } = addedrvw
 
     return (
         <div className='flex flex-col max-w-sm mx-4 my-6'>
@@ -21,7 +21,6 @@ const SpecificAddedReview = ({ addedrvw }) => {
             <div className="flex flex-col items-center justify-center p-8 rounded-b-lg dark:bg-indigo-400 dark:text-gray-900">
                 <img src={photoURL} alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full dark:bg-gray-700" />
                 <p className="text-xl font-semibold leading-tight">{reviewer}</p>
-                <p className="text-sm font-semibold leading-tight">PACKAGE NAME: {packageName}</p>
             </div>
         </div>
     );

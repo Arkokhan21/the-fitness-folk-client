@@ -1,8 +1,8 @@
 import React from 'react';
 
-const AddedReviews = ({ customerRvw }) => {
+const AddedReviews = ({ customerRvw, handleDeleteReview }) => {
 
-    const { photoURL, review, reviewer, packageName } = customerRvw
+    const { photoURL, review, reviewer, packageName, _id } = customerRvw
 
     return (
         <div className='flex flex-col max-w-sm mx-4 my-6'>
@@ -21,7 +21,11 @@ const AddedReviews = ({ customerRvw }) => {
             <div className="flex flex-col items-center justify-center p-8 rounded-b-lg dark:bg-indigo-400 dark:text-gray-900">
                 <img src={photoURL} alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full dark:bg-gray-700" />
                 <p className="text-xl font-semibold leading-tight">{reviewer}</p>
-                <p className="text-sm font-semibold leading-tight">PACKAGE NAME: {packageName}</p>
+                <p className="text-xl font-semibold leading-tight text-gray-700">Package: {packageName}</p>
+                <div className='mt-5'>
+                    <button className='btn btn-active btn-accent text-white mr-5'>Edit Review</button>
+                    <button onClick={() => handleDeleteReview(_id)} className='btn btn-active btn-accent text-white'>Delete Review</button>
+                </div>
             </div>
         </div>
     );
