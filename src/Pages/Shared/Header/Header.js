@@ -29,9 +29,11 @@ const Header = () => {
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0 font-semibold">
                     <li><Link to='/home'>Home</Link></li>
-                    <li><Link className='ml-5'>Blog</Link></li>
+                    <li><Link to='/blog' className='ml-5'>Blog</Link></li>
                     {user?.photoURL ?
                         <>
+                            <li><Link to='/myreviews' className='ml-5'> My Reviews</Link></li>
+                            <li><Link to='/addservice' className='ml-5'>Add Service</Link></li>
                             <Link onClick={handleLogout} className='btn btn-active btn-accent text-white ml-5'>
                                 Log Out
                             </Link>

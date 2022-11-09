@@ -1,8 +1,8 @@
 import React from 'react';
 
-const AddedReviews = ({ customerRvw }) => {
+const SpecificAddedReview = ({ addedrvw }) => {
 
-    const { photoURL, review, reviewer, packageName } = customerRvw
+    const { photoURL, review, reviewer, packageName } = addedrvw
 
     return (
         <div className='flex flex-col max-w-sm mx-4 my-6'>
@@ -27,4 +27,4 @@ const AddedReviews = ({ customerRvw }) => {
     );
 };
 
-export default AddedReviews;
+export default SpecificAddedReview;
