@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import { AuthContext } from '../../Contexts/AuthProvider';
 import useTitle from '../../hooks/useTitle';
 import AddedReviews from '../Reviews/AddedReviews';
+import { toast } from 'react-hot-toast'
 
 const MyReviews = () => {
 
@@ -13,7 +14,7 @@ const MyReviews = () => {
 
     // get / read data by UserEmail -
     useEffect(() => {
-        fetch(`http://localhost:5000/reviews?email=${user?.email}`)
+        fetch(`https://the-fitness-folk-server.vercel.app/reviews?email=${user?.email}`)
             .then(res => res.json())
             .then(data => setReviews(data))
             .catch(err => console.error(err))
@@ -23,14 +24,14 @@ const MyReviews = () => {
     const handleDeleteReview = (id) => {
         const proceed = window.confirm('Are You Sure, You Want To Delete This Review?')
         if (proceed) {
-            fetch(`http://localhost:5000/reviews/${id}`, {
+            fetch(`https://the-fitness-folk-server.vercel.app/reviews/${id}`, {
                 method: 'DELETE',
             })
                 .then(res => res.json())
                 .then(data => {
                     console.log(data)
                     if (data.deletedCount > 0) {
-                        alert('Deleted Successfully')
+                        toast.success('Deleted Successfully')
                         const remainingReview = reviews.filter(rvw => rvw._id !== id)
                         setReviews(remainingReview)
                     }
@@ -45,7 +46,7 @@ const MyReviews = () => {
                 reviews.length > 0 ? reviews.map(customerRvw => <AddedReviews key={customerRvw._id} customerRvw={customerRvw}
                     handleDeleteReview={handleDeleteReview}></AddedReviews>)
                     :
-                    <p className='text-3xl text-gray-400 my-32 col-span-4'>No reviews were added</p>
+                    <p className='text-3xl text-gray-400 mt-32 mb-96 col-span-4'>No reviews were added</p>
             }
         </div>
     );

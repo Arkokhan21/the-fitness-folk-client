@@ -16,41 +16,41 @@ const Footer = () => {
                     </div>
                     <div className="col-span-6 text-center md:text-left md:col-span-3">
                         <p className="pb-1 text-lg font-medium">Category</p>
-                        <ul>
+                        <ul className='cursor-pointer'>
                             <li>
-                                <span rel="noopener noreferrer" href="#" className="hover:text-violet-400">Link</span>
+                                <span rel="noopener noreferrer" className="hover:text-violet-400">Features</span>
                             </li>
                             <li>
-                                <span rel="noopener noreferrer" href="#" className="hover:text-violet-400">Link</span>
+                                <span rel="noopener noreferrer" className="hover:text-violet-400">FAQ</span>
                             </li>
                             <li>
-                                <span rel="noopener noreferrer" href="#" className="hover:text-violet-400">Link</span>
+                                <span rel="noopener noreferrer" className="hover:text-violet-400">Company</span>
                             </li>
                             <li>
-                                <span rel="noopener noreferrer" href="#" className="hover:text-violet-400">Link</span>
+                                <span rel="noopener noreferrer" className="hover:text-violet-400">Privacy</span>
                             </li>
                             <li>
-                                <span rel="noopener noreferrer" href="#" className="hover:text-violet-400">Link</span>
+                                <span rel="noopener noreferrer" className="hover:text-violet-400">Terms of Service</span>
                             </li>
                         </ul>
                     </div>
                     <div className="col-span-6 text-center md:text-left md:col-span-3">
                         <p className="pb-1 text-lg font-medium">Category</p>
-                        <ul>
+                        <ul className='cursor-pointer'>
                             <li>
-                                <span rel="noopener noreferrer" href="#" className="hover:text-violet-400">Link</span>
+                                <span rel="noopener noreferrer" className="hover:text-violet-400">Guides</span>
                             </li>
                             <li>
-                                <span rel="noopener noreferrer" href="#" className="hover:text-violet-400">Link</span>
+                                <span rel="noopener noreferrer" className="hover:text-violet-400">Features</span>
                             </li>
                             <li>
-                                <span rel="noopener noreferrer" href="#" className="hover:text-violet-400">Link</span>
+                                <span rel="noopener noreferrer" className="hover:text-violet-400">Privacy</span>
                             </li>
                             <li>
-                                <span rel="noopener noreferrer" href="#" className="hover:text-violet-400">Link</span>
+                                <span rel="noopener noreferrer" className="hover:text-violet-400">Company</span>
                             </li>
                             <li>
-                                <span rel="noopener noreferrer" href="#" className="hover:text-violet-400">Link</span>
+                                <span rel="noopener noreferrer" className="hover:text-violet-400">Terms of Service</span>
                             </li>
                         </ul>
                     </div>

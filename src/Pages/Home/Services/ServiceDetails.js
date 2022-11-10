@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { AuthContext } from '../../../Contexts/AuthProvider';
 import SpecificAddedReview from '../../Reviews/SpecificAddedReview';
 import useTitle from '../../../hooks/useTitle';
+import { toast } from 'react-hot-toast'
 
 const ServiceDetails = () => {
 
@@ -18,7 +19,7 @@ const ServiceDetails = () => {
 
     // get / read data by packageId - 
     useEffect(() => {
-        fetch(`http://localhost:5000/reviews?package=${_id}`)
+        fetch(`https://the-fitness-folk-server.vercel.app/reviews?package=${_id}`)
             .then(res => res.json())
             .then(data => setAddedReviews(data))
             .catch(err => console.error(err))
@@ -43,7 +44,7 @@ const ServiceDetails = () => {
             review
         }
         // send data to the database - (Post/Create)
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://the-fitness-folk-server.vercel.app/reviews', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -54,7 +55,7 @@ const ServiceDetails = () => {
             .then(data => {
                 console.log(data)
                 if (data.acknowledged) {
-                    alert('Review Added. Thank You')
+                    toast.success('Review Added. Thank You')
                     form.reset()
                 }
             })
@@ -95,7 +96,7 @@ const ServiceDetails = () => {
                                 </div>
                             </form>
                             :
-                            <span>Please <Link to='/login'><p className='font-bold text-blue-500 '>Login</p></Link> to add a review</span>
+                            <span className='text-xl'>Please <Link to='/login'><p className='font-bold text-blue-500 '>Login</p></Link> To add a review</span>
                     }
                 </div>
             </div>

@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../../Contexts/AuthProvider';
 import useTitle from '../../hooks/useTitle';
+import { toast } from 'react-hot-toast'
 
 const AddService = () => {
 
@@ -28,7 +29,7 @@ const AddService = () => {
         }
 
         // send data to the database - (Post/Create)
-        fetch('http://localhost:5000/addedservices', {
+        fetch('https://the-fitness-folk-server.vercel.app/addedservices', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -39,7 +40,7 @@ const AddService = () => {
             .then(data => {
                 console.log(data)
                 if (data.acknowledged) {
-                    alert('Service Added')
+                    toast.success('Service Added')
                     form.reset()
                 }
             })

@@ -4,6 +4,7 @@ import { FaFacebook, FaGoogle, FaTwitter } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Contexts/AuthProvider';
 import useTitle from '../../hooks/useTitle';
+import { toast } from 'react-hot-toast'
 
 const Register = () => {
     useTitle('Register')
@@ -22,6 +23,7 @@ const Register = () => {
             .then(result => {
                 const user = result.user
                 console.log(user)
+                toast.success('Register Successful')
                 form.reset()
                 handleUpdateUserProfile(name, photoURL)
             })
