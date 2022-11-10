@@ -19,7 +19,7 @@ const ServiceItem = ({ service }) => {
                     </p>
                     <Link to={`/services/${_id}`}><button className="btn btn-active btn-accent text-white">View Details</button></Link>
                 </div>
-                <figure><img src={img} alt="Shoes" /></figure>
+                <figure><img src={img} alt="" /></figure>
             </div>
         </div>
     );
