@@ -90,7 +90,7 @@ const ServiceDetails = () => {
                     {
                         user?.email ?
                             <form onSubmit={handleAddReview}>
-                                <textarea name='review' className="textarea textarea-bordered w-4/6" placeholder="Your Review"></textarea>
+                                <textarea name='review' className="textarea textarea-bordered w-4/6" placeholder="Your Review" required></textarea>
                                 <div className='my-5'>
                                     <button type="submit" className="btn btn-active btn-accent text-white">Add Review</button>
                                 </div>
