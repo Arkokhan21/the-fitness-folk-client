@@ -4,8 +4,11 @@ import Reviews from '../../Reviews/Reviews';
 import { Link } from 'react-router-dom'
 import { AuthContext } from '../../../Contexts/AuthProvider';
 import SpecificAddedReview from '../../Reviews/SpecificAddedReview';
+import useTitle from '../../../hooks/useTitle';
 
 const ServiceDetails = () => {
+
+    useTitle('Package Details')
 
     const { user } = useContext(AuthContext)
 
