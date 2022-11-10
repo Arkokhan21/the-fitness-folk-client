@@ -16,7 +16,7 @@ const Services = () => {
     return (
         <div>
             <div className='text-center'>
-                <p className='font-bold text-3xl my-20'>Packages</p>
+                <p className='font-bold text-3xl mt-28 mb-20 underline'>PACKAGES</p>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-3 md:ml-56'>
                 {
@@ -27,7 +27,7 @@ const Services = () => {
                     ></ServiceItem>)
                 }
             </div>
-            <div className='text-center my-20'>
+            <div className='text-center mb-28'>
                 <Link to='/services/all'><button className="btn btn-outline btn-accent">More Packages</button></Link>
             </div>
         </div>

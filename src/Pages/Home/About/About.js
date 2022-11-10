@@ -63,7 +63,7 @@ const About = () => {
             </section>
 
 
-            <section className="p-6">
+            <section className="p-6 my-20">
                 <div className="container max-w-xl mx-auto">
                     <div className="flex flex-col items-center w-full p-6 space-y-8 rounded-md lg:h-full lg:p-8  bg-gray-900  text-gray-100">
                         <img src="https://media.istockphoto.com/photos/happy-personal-trainer-working-at-the-gym-picture-id852401732?b=1&k=20&m=852401732&s=170667a&w=0&h=fWQZfRpZTvSJ-xDnbeuwlci5Te_4RKt5raaeCShlgpk=" alt="" className="w-20 h-20 rounded-full  bg-gray-500" />
