@@ -63,17 +63,17 @@ const ServiceDetails = () => {
     }
 
     return (
-        <div className='grid grid-cols-1 md:grid-cols-2 mb-20'>
-            <div className="card shadow-xl bg-slate-300 w-2/5 m-auto ">
-                <figure><img src={img} alt="Shoes" /></figure>
+        <div className='grid grid-cols-1 md:grid-cols-2'>
+            <div className="card shadow-xl bg-slate-300 w-3/5 h-[500px] mx-auto mb-10 md:mb-0">
+                <figure><img className='w-full' src={img} alt="" /></figure>
                 <div className="card-body">
-                    <h2 className="card-title">{title}</h2>
+                    <h2 className="text-center text-xl font-bold">{title}</h2>
                     <h2 className="text-xl font-bold">${price}</h2>
                     <p>{description}</p>
                 </div>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-3'>
+            <div className='grid grid-cols-2'>
                 <div>
                     {
                         review.map(rvw => <Reviews key={rvw.name} rvw={rvw}></Reviews>)
@@ -85,20 +85,20 @@ const ServiceDetails = () => {
                         AddedReviews.map(addedrvw => <SpecificAddedReview key={addedrvw._id} addedrvw={addedrvw}></SpecificAddedReview>)
                     }
                 </div>
+            </div>
 
-                <div>
-                    {
-                        user?.email ?
-                            <form onSubmit={handleAddReview}>
-                                <textarea name='review' className="textarea textarea-bordered w-4/6" placeholder="Your Review" required></textarea>
-                                <div className='my-5'>
-                                    <button type="submit" className="btn btn-active btn-accent text-white">Add Review</button>
-                                </div>
-                            </form>
-                            :
-                            <span className='text-xl'>Please <Link to='/login'><p className='font-bold text-blue-500 '>Login</p></Link> To add a review</span>
-                    }
-                </div>
+            <div className='mt-5 md:mt-0 mb-5'>
+                {
+                    user?.email ?
+                        <form onSubmit={handleAddReview}>
+                            <textarea name='review' className="textarea textarea-bordered w-4/6" placeholder="Your Review" required></textarea>
+                            <div className='my-5'>
+                                <button type="submit" className="btn btn-active btn-accent text-white">Add Review</button>
+                            </div>
+                        </form>
+                        :
+                        <span className='text-xl font-semibold'>Please <Link to='/login'><p className='font-bold text-blue-500 '>Login</p></Link> To add a review</span>
+                }
             </div>
         </div>
     );

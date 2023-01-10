@@ -41,12 +41,12 @@ const MyReviews = () => {
     }
 
     return (
-        <div className='grid grid-cols-1 lg:grid-cols-3 gap-5'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 w-4/5 mx-auto mb-[200px]'>
             {
                 reviews.length > 0 ? reviews.map(customerRvw => <AddedReviews key={customerRvw._id} customerRvw={customerRvw}
                     handleDeleteReview={handleDeleteReview}></AddedReviews>)
                     :
-                    <p className='text-3xl text-gray-400 mt-32 mb-96 col-span-4'>No reviews were added</p>
+                    <p className='text-3xl text-gray-400 mt-32 mb-[200px] col-span-4'>No reviews were added</p>
             }
         </div>
     );

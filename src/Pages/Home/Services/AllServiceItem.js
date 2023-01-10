@@ -9,9 +9,9 @@ const AllServiceItem = ({ allService }) => {
 
     return (
         <div>
-            <div className="card w-96 h-4/5 shadow-xl bg-slate-300">
+            <div className="card h-4/5 shadow-xl bg-slate-300">
                 <div className="card-body">
-                    <h2 className="card-title">{title}</h2>
+                    <h2 className="text-center text-xl font-bold">{title}</h2>
                     <h2 className="text-xl font-bold">${price}</h2>
                     <p>
                         {
@@ -23,7 +23,7 @@ const AllServiceItem = ({ allService }) => {
                 </div>
                 <PhotoProvider>
                     <PhotoView src={img}>
-                        <figure><img src={img} alt="S" /></figure>
+                        <figure><img src={img} className='cursor-pointer' alt="" /></figure>
                     </PhotoView>
                 </PhotoProvider>
             </div>

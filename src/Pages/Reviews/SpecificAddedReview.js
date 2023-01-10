@@ -5,7 +5,7 @@ const SpecificAddedReview = ({ addedrvw }) => {
     const { photoURL, review, reviewer } = addedrvw
 
     return (
-        <div className='flex flex-col max-w-sm mx-4 my-6'>
+        <div className='mr-5'>
             <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 bg-gray-900">
                 <p className="relative px-6 py-1 text-lg italic text-center text-gray-100">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" className="w-8 h-8 text-indigo-400">
@@ -18,7 +18,7 @@ const SpecificAddedReview = ({ addedrvw }) => {
                     </svg>
                 </p>
             </div>
-            <div className="flex flex-col items-center justify-center p-8 rounded-b-lg bg-indigo-400 text-gray-900">
+            <div className="flex flex-col items-center justify-center p-8 rounded-b-lg bg-indigo-300 text-gray-900">
                 <img src={photoURL} alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full bg-gray-700" />
                 <p className="text-xl font-semibold leading-tight">{reviewer}</p>
             </div>

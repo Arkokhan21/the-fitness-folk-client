@@ -36,7 +36,7 @@ const UpdateReview = () => {
 
     return (
         <div>
-            <h2 className='font-bold text-xl my-10'>Update Your Review</h2>
+            <h2 className='font-bold text-3xl my-5'>Update Your Review</h2>
             <form onSubmit={handleAddReview}>
                 <input onChange={handleInputChange} type='text' defaultValue={storedReview.review} name='review' className="textarea textarea-bordered w-4/6"></input>
                 <div className='mt-5 mb-96'>
